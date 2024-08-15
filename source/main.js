@@ -8,7 +8,12 @@ runProgram()
 const end = Date.now(); // Last PROGRAM RUNNING, Line.
 
 const timetaken = end
-timetaken -= begin
+timetaken = timetaken - begin
 
-var timeReport = document.createElement('p')
-timeReport.innerHtml = timetaken.toString()
+const timeReport = document.createElement('p')
+const node = document.createTextNode("This is new.");
+timeReport.appendChild(node);
+
+const element = document.getElementById("program");
+element.appendChild(timeReport);
+
