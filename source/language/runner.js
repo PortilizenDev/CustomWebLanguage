@@ -1,10 +1,7 @@
-export default class Runner {
-  
-  private split(code = "") {
+export function split(code = "") {    
     var codeList = code.Split(' ')
     
     return codeList
-  }
-
-  private run(codeList = []) {}
 }
+
+export function run(codeList = []) {}
