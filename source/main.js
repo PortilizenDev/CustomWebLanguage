@@ -1,5 +1,14 @@
-import Runner from './language/runner.js'
+const begin = Date.now(); // First Line
 
-var final = new Runner()
+import {split as splitCode, run as runProgram} from './language/runner.js'
 
-final.run()
+splitCode()
+runProgram()
+
+const end = Date.now(); // Last PROGRAM RUNNING, Line.
+
+const timetaken = end
+timetaken -= begin
+
+var timeReport = document.createElement('p')
+timeReport.innerHtml = timetaken.toString()
