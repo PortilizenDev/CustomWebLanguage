@@ -1,2 +1,2 @@
-# CustomWebLanguage
+# CWL
 Custom Web Language
